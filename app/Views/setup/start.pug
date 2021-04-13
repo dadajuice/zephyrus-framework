@@ -101,7 +101,7 @@ html
                       +step-input(localize("setup.application.timezone.title"), localize("setup.application.timezone.description"), "application_timezone", "America/New_York")(placeholder="Ex.: America/New_York")
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
               else if setup < 1
                 div.inactive: span=localize("setup.application.title")
               else
@@ -136,7 +136,7 @@ html
                       +step-switch(localize("setup.database.convert.title"), localize("setup.database.convert.description"), "database_convert", true)
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/setup-cancel")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
               else if setup < 2
                 div.inactive: span=localize("setup.database.title")
               else
@@ -162,7 +162,7 @@ html
                       +step-switch(localize("setup.security.session_refresh.title"), localize("setup.security.session_refresh.description"), "security_session_refresh", false)
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/setup-cancel")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
               else if setup < 3
                 div.inactive: span=localize("setup.security.title")
               else
@@ -194,7 +194,7 @@ html
                       +step-switch(localize("setup.frontend.numeral.title"), localize("setup.frontend.numeral.description"), "frontend_numeral", false)
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/setup-cancel")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
 
               else if setup < 4
                 div.inactive: span=localize("setup.frontend.title")
@@ -221,7 +221,7 @@ html
                       +step-switch(localize("setup.others.unittest.title"), localize("setup.others.unittest.description"), "others_unittest", true)
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/setup-cancel")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
               else if setup < 5
                 div.inactive: span=localize("setup.others.title")
               else
@@ -311,7 +311,7 @@ html
                       +understand(localize("setup.understand"))
                       .text-right.mt-3
                         a.btn.btn-sm.btn-outline-secondary.mr-2(href="/setup-cancel")=localize("strings.cancel")
-                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue")
+                        button.btn.btn-sm.btn-success(type="submit")=localize("strings.continue_step")
               else if setup < 6
                 div.inactive: span=localize("setup.confirmation.title")
               else

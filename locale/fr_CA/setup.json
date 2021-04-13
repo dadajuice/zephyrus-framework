@@ -139,7 +139,7 @@
   "strings": {
     "yes": "Oui",
     "no": "Non",
-    "continue": "Continuer",
+    "continue_step": "Continuer",
     "cancel": "Annuler",
     "understand": "Je comprends"
   }
