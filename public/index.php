@@ -23,9 +23,9 @@ Bootstrap::initializeRoutableControllers($router);
 try {
     $router->run(RequestFactory::read());
 } catch (RouteMethodUnsupportedException $e) {
-    ResponseFactory::getInstance()->buildAbortMethodNotAllowed()->send();
+    ResponseFactory::getInstance()->abortMethodNotAllowed()->send();
 } catch (RouteNotAcceptedException $e) {
-    ResponseFactory::getInstance()->buildAbortNotAcceptable()->send();
+    ResponseFactory::getInstance()->abortNotAcceptable()->send();
 } catch (RouteNotFoundException $e) {
-    ResponseFactory::getInstance()->buildAbortNotFound()->send();
+    ResponseFactory::getInstance()->abortNotFound()->send();
 }
